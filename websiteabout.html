@@ -1,112 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
 <style>
 
 body {
-   background-image:url('aboutbg.jpg');
+   background-attachment:fixed;
+   background-image:url('realbg.jpg');
    background-size:cover;
    background-repeat:no-repeat;
   }
 
-div {
-    background-color: rgb(37, 37, 37);
-    width: 93.4%;
-    height: 20%;
-    padding: 70px;
-    margin: -8px;
-}
+div.holder{
+    background-image:url('scroll.jpg');
+	margin-left:0px;
+	width: 100%;
+	height: 1168px;
+	opacity: 0.8;
+	}
 
 h7 {
-    position: absolute;
-    left:280px;
-    top: 45px;
-    color:white;
+    float: left;
+	clear:right;
+	color:white;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 
 }
 
 h8 {
-    position: absolute;
-    left: 280px;
-    top: 75px;
-    color: white;
+    float: left;
+	clear:both;
+	color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
 }
 
-h9 {
-    position: absolute;
-    left: 1540px;
-    top: 90px;
-    color: white;
+ul#menu li {
+    display:inline;
+	float:right;
+	color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
-}
+	white-space:text-nowrap;
+	}
 
-h10 {
-    position: absolute;
-    left: 1450px;
-    top: 90px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-}
+ul#menu li a {
+	color: white;
+	padding: 0px 10px 10px 0px;
+	text decoration: none;
+	white-space:text-nowrap;
+	}
 
-h11 {
-    position: absolute;
-    left: 1350px;
-    top: 90px;
-    color: rgb(277,2,2);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-}
+ul#menu li a:hover {
+    color: red;
+	white-space:text-nowrap;
+	}
 
-h12 {
-    position: absolute;
-    left: 1250px;
-    top: 90px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-}
+ul#menu li a:active {
+    color: red;
+	}
 
 h13 {
-    position: absolute;
-    left: 280px;
-    top: 235px;
+    display: block;
     color: white;
     font-family: 'Tangerine', cursive;
-    font-size: 45px;
+    font-size: 44px;
+	clear:left;
 }
 
 h14 {
-    position: absolute;
-    left:375px;
-    top:400px;
     color: rgb(74,67,67);
-    font-size:15px;
+	font-size:15px;
     font-family: 'Hind', sans-serif;
     font-size: 120%;
+	word-wrap: break-word;
 }
 h15 {
-    position: absolute;
-    left:900px;
-    top:350px;
-    color: rgb(74,67,67);
-
-}
+	color: rgb(74,67,67);
+	text:nowrap;
+	}
 
 h16 {
     position:absolute;
-    left:93%;
+    left:97%;
     top:130%;
     font-size: 50%
-}
+	}
+
+
+
 
 </style>
 
@@ -115,25 +102,67 @@ h16 {
 </head>
 
 <body>
-<a href="websitecart.html">
-<img src="cart.jpg" alt="The Cart" style="position:absolute; top:5%; left:1800px;">
-</a>
-<div>
-<h7>Part of the Spirit</h7>
+
+<nav class="navbar navbar-inverse">
+<h7 class="text-nowrap">Part of the Spirit</h7>
 <h8>Santa's Favourite Image</h8>
-<a href="websitecontact.html">
-<h9>Contact</h9>
-</a>
-<a href="websitestore.html">
-<h10>Store</h10>
-</a>
-<h11>About</h11>
-<a href="index.html">
-<h12>Home</h12>
-</a>
-<h13>Behind The Magic</h13>
+<div class="container-fluid">
 
-<h16>designed by Jonathan Peres da Silva</h16>
 
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse	navbar-collapse" id="menu">
+
+<ul id="menu" class="text-nowrap">
+
+	<li class="text-nowrap"><a href="websitecart.html"><img src="cart.jpg" alt="The Cart" style= "height:50px; width:50px;"></a></li>
+	<li class="text-nowrap"><a href="websitecontact.html">Contact</a></li>
+	<li class="text-nowrap"><a href="websitestore.html">Store</a></li>
+	<li class="text-nowrap"><a href="websiteabout.html">About</a></li>
+	<li class="text-nowrap"><a href="index.html">Home</a></li>
+	</ul>
+	</div>
+</div>
+</nav>
+<div class="container">
+<h13 class="text-nowrap"><br>Behind The Magic</h13>
+
+<div class="holder">
+
+<div class="col-md-7">
+
+<h14><br><strong>History</Strong><br>Many in Canada and America are familiar with this Santa and have a framed version on their walls from the original launch by the major retailers a few years ago.  Now the program is launching 100's of other images along with our all year Part of the Spirit products.
+<br><br>
+<strong>Process</strong>
+<br>
+Santa's Favourite products are those that take a portion of the retail profit and help those in need, in a true Santa Claus spirit.
+<br><br>
+All the new products coming are exclusive to this site and
+associated businesses. They are internationally protected by copyright agreements and registered under Industry Canada. Based on the record selling pace of Santa's Favourite framed print,  we know the impact we can make together with every other Christmas item we place Santa's Favourite logo on.
+Santa's Favourite clothing line called Part of the Spirit will
+include shirts, hats and much more.</h14>
+</div>
+<div class="col-md-5">
+<div class="col-md-2">
+</div>
+<div class="col-md-10">
+<h20><br></h20>
+<img src="promotionpic.jpg" alt="promotionpic" style= "height:303px; width:193px;display: block; margin-left:auto; margin-right:auto;">
+<h15><center>The original promotion of Santa's Favourite Prints</h15>
+</div>
+</div>
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
