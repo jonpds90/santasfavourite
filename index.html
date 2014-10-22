@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title> Santa's Favourite Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
@@ -25,7 +26,12 @@ div.holder{
 @media screen and (min-width:1024px){
     div.holder{height:800px;}
     }
-
+div.vertical-line{
+  width:1px;
+  background-color:white;
+  height: 30px;
+  float:right;
+  }
 h7 {
     float: left;
 	clear:right;
@@ -44,17 +50,17 @@ h8 {
 }
 
 ul#menu li {
-    display:inline;
+    display: inline;
 	float:right;
 	color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+    font-size: 20px;
 	white-space:text-nowrap;
 	}
 
 ul#menu li a {
 	color: white;
-	padding: 0px 10px 10px 0px;
+	padding: 0px 10px 0px 10px;
 	text decoration: none;
 	white-space:text-nowrap;
 	}
@@ -129,12 +135,14 @@ h16 {
     </div>
     <div class="collapse	navbar-collapse" id="menu">
 
-<ul id="menu" class="text-nowrap">
+<ul id="menu" class="text-nowrap";>
+<p><br><br></p>
 
-	<li class="text-nowrap"><a href="websitecart.html"><img src="cart.jpg" alt="The Cart" style= "height:50px; width:50px;"></a></li>
-	<li class="text-nowrap"><a href="websitecontact.html">Contact</a></li>
-	<li class="text-nowrap"><a href="websitestore.html">Store</a></li>
-	<li class="text-nowrap"><a href="websiteabout.html">About</a></li>
+	<li class="text-nowrap"><a href="websitecart.html"><img src="cart.jpg" alt="The Cart" style= "height:25px; width:25px;"></a></li>
+	<li class="text-nowrap"><a href="websitevideo.html">Write Santa!</a></li><div class="vertical-line"></div>
+	<li class="text-nowrap"><a href="websitecontact.html">Contact</a></li><div class="vertical-line"></div>
+	<li class="text-nowrap"><a href="websitestore.html">Store</a></li><div class="vertical-line"></div>
+	<li class="text-nowrap"><a href="websiteabout.html">About</a></li><div class="vertical-line"></div>
 	<li class="text-nowrap"><a href="index.html">Home</a></li>
 
 	</ul>
